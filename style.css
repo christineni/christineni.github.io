@@ -1,0 +1,117 @@
+* {
+  color: #FFF;
+}
+
+nav {
+  margin: 10px 5px;
+  float: right;
+  padding: 10px;
+}
+
+a {
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #FFF;
+  border-width: thin;
+}
+
+a:hover {
+  border-style: solid;
+  border-color: #000;
+  color: #000;
+}
+
+a:active {
+  background-color: #FFF;
+  opacity: .5;
+  color: #000;
+}
+
+a:visited, {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.btn {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.8em;
+  opacity: .9;
+}
+
+#index-div  {
+  position: fixed;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+#greeting {
+  font-family: "Castellar", Georgia, Serif;
+  font-size: 50px;
+}
+
+/* BACKGROUND IMAGE STYLES */
+
+#index-img {
+  background: #D5CFE1 url("images/index-img.png") no-repeat center top;
+  background-size: 1440px 900px;
+}
+
+#about-img {
+  background: #D5CFE1 url("images/about-img.png") no-repeat center top;
+  background-size: 1440px 900px;
+}
+
+#resume-img {
+  background: #D5CFE1 url("images/resume-img.png") no-repeat center top;
+  background-size: 1440px 900px;
+}
+
+#contact-img {
+  background: #D5CFE1 url("images/contact-img.png") no-repeat center top;
+  background-size: 1440px 900px;
+}
+
+/*LOGO STYLE*/
+
+#logo-link {
+  border-style: none;
+  text-decoration: none;
+}
+
+#logo-link:active {
+  background-color: transparent;
+}
+
+#logo-img {
+  float: left;
+  margin-left: 5px;
+  margin-top: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+@media only screen and (max-width: 489px) {
+    nav {
+      float: none;
+      text-align: center;
+    }
+
+    #logo-img {
+      float: none;
+    }
+})
