@@ -48,13 +48,14 @@ footer {
 
 .btn {
   font-family: "Times New Roman", Times, serif;
-  font-size: 0.8em;
+  font-size: 0.9em;
   opacity: .9;
+  margin: 5px;
 }
 
 #index-div  {
   position: fixed;
-  top: 30%;
+  top: 35%;
   width: 100%;
   text-align: center;
 }
@@ -69,26 +70,38 @@ footer {
 
 #index-img {
   background: #D5CFE1 url("images/index-img.png") no-repeat center top;
-  background-size: cover;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #about-img {
   background: #D5CFE1 url("images/about-img.png") no-repeat center top;
-  background-size: cover;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #resume-img {
   background: #D5CFE1 url("images/resume-img.png") no-repeat center top;
-  background-size: cover;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #contact-img {
   background: #D5CFE1 url("images/contact-img.png") no-repeat center top;
-  background-size: cover;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*LOGO STYLE*/
@@ -104,7 +117,7 @@ footer {
 
 #logo-img {
   float: left;
-  margin-left: 5px;
+  margin-left: 15px;
   margin-top: 15px;
   width: 60px;
   height: 60px;
@@ -121,6 +134,15 @@ footer {
     }
 })
 
+/*
+@media only screen and (max-width: 991px) {
+  div {
+
+  }
+}
+
+
 @@media only screen and (max-height: ) {
 
 }
+*/
