@@ -62,12 +62,13 @@ footer {
 #greeting {
   font-family: "Castellar", Georgia, Serif;
   font-size: 50px;
+  text-shadow: 2px 2px #000;
 }
 
 /* BACKGROUND IMAGE STYLES */
 
 #index-img {
-  background: #D5CFE1 url("images/index-img.png") no-repeat center center;
+  background: #D5CFE1 url("images/index-img.png") no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -119,3 +120,7 @@ footer {
       float: none;
     }
 })
+
+@@media only screen and (max-height: ) {
+
+}
