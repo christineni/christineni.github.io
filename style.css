@@ -68,18 +68,22 @@ footer {
 
 #index-img {
   background: #D5CFE1 url("images/index-img.png") no-repeat center top;
+  background-size: 100%;
 }
 
 #about-img {
   background: #D5CFE1 url("images/about-img.png") no-repeat center top;
+  background-size: 100%;
 }
 
 #resume-img {
   background: #D5CFE1 url("images/resume-img.png") no-repeat center top;
+  background-size: 100%;
 }
 
 #contact-img {
   background: #D5CFE1 url("images/contact-img.png") no-repeat center top;
+  background-size: 100%;
 }
 
 /*LOGO STYLE*/
