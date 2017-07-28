@@ -37,10 +37,11 @@ a:visited, {
 body {
   font-family: "Times New Roman", Times, serif;
   text-align: center;
+  min-width: 450px;
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
@@ -51,6 +52,10 @@ footer {
   font-size: 0.9em;
   opacity: .9;
   margin: 5px;
+}
+
+.container-fluid {
+  margin: 100px;
 }
 
 #index-div  {
@@ -70,38 +75,26 @@ footer {
 
 #index-img {
   background: #D5CFE1 url("images/index-img.png") no-repeat center top;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #about-img {
   background: #D5CFE1 url("images/about-img.png") no-repeat center top;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #resume-img {
   background: #D5CFE1 url("images/resume-img.png") no-repeat center top;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 #contact-img {
   background: #D5CFE1 url("images/contact-img.png") no-repeat center top;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 /*LOGO STYLE*/
@@ -123,26 +116,21 @@ footer {
   height: 60px;
 }
 
-@media only screen and (max-width: 489px) {
-    nav {
-      float: none;
-      text-align: center;
-    }
+#about {
+  border: thin solid white;
+  background-color: #000;
+  opacity: .8;
+  text-align: left;
+  padding: 10px 30px 30px;
+}
 
-    #logo-img {
-      float: none;
-    }
-})
+@media screen and (max-width: 489px) {
+  nav {
+    float: none;
+    text-align: center;
+  }
 
-/*
-@media only screen and (max-width: 991px) {
-  div {
-
+  #logo-img {
+    float: none;
   }
 }
-
-
-@@media only screen and (max-height: ) {
-
-}
-*/
