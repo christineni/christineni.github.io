@@ -1,2 +1,2 @@
-# christineni.github.
+# christineni.github.io
 # website still in progress...
