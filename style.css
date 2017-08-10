@@ -5,7 +5,7 @@
 nav {
   margin: 10px 5px;
   float: right;
-  padding: 10px;
+  padding: 15px;
 }
 
 a {
@@ -24,13 +24,7 @@ a:hover {
   color: #000;
 }
 
-a:active {
-  background-color: #FFF;
-  opacity: .5;
-  color: #000;
-}
-
-a:visited, {
+a:visited {
   text-decoration: none;
 }
 
@@ -39,7 +33,7 @@ body {
   text-align: center;
   min-width: 450px;
 }
-
+/*
 footer {
   position: fixed;
   right: 0;
@@ -49,7 +43,7 @@ footer {
   color: #000;
   opacity: .6;
 }
-
+*/
 .btn {
   font-family: "Times New Roman", Times, serif;
   font-size: 0.9em;
@@ -59,9 +53,8 @@ footer {
 
 .container-fluid {
   margin: 75px 100px;
-  border-style: solid;
-  border-width: thin;
 }
+
 
 #index-div  {
   position: fixed;
@@ -90,8 +83,8 @@ footer {
   background-attachment: fixed;
 }
 
-#resume-img {
-  background: #D5CFE1 url("images/resume-img.png") no-repeat center top;
+#portfolio-img {
+  background: #D5CFE1 url("images/portfolio-img.png") no-repeat center top;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -128,30 +121,41 @@ footer {
   text-align: left;
   padding: 10px 30px 30px;
   margin-top: 35px;
+  margin-left: auto;
+  overflow: auto;
 }
 
 #prof-pic {
   margin-top: 25px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 510px) {
   nav {
     float: none;
     text-align: center;
+    background-color: #FFF;
+    opacity: .6;
+  }
+
+  a {
+    color: #000;
   }
 
   #logo-img {
     float: none;
   }
 
+  #about {
+    margin-left: 0px;
+  }
   .container-fluid {
     margin: 35px 75px
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 863px) {
+@media screen and (min-width: 768px) and (max-width: 1100px) {
   #about {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
+    margin-left: 40px;
   }
-
 }
