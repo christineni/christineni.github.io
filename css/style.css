@@ -1,0 +1,101 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400px;
+  line-height: 1.8em;
+  min-width: 421px;
+}
+
+.intro-img, .about-img, .portfolio-img, .contact-img {
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro-img {
+  background-image: url("../img/intro.png");
+  min-height: 100%;
+}
+
+.about-img {
+  background-image: url("../img/about.png");
+  min-height: 350px;
+}
+
+.portfolio-img {
+  background-image: url("../img/portfolio.png");
+  min-height: 350px;
+  max-height: 400;
+}
+
+.contact-img {
+  background-image: url("../img/contact.png");
+  min-height: 350px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px;
+}
+
+.light {
+ background-color: #EFEFEF;
+ color: #30184B;
+}
+
+.dark {
+  background-color: #28112B;
+  color: #EFEFEF;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #000;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.text .border {
+  background-color: #000;
+  opacity: .85;
+  color: #FFF;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.text .border.trans {
+  background-color: transparent;
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.arrow {
+  padding: 5px;
+  background-color: #FFF;
+  border-radius: 50px;
+}
+
+.owl-carousel {
+  min-height: 150px;
+}
+
+#pic {
+  margin-top: 25px;
+}
+
+@media screen and (max-device-width: 568px) {
+  .intro-img {
+    background-attachment: scroll;
+  }
+}
