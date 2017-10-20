@@ -9,9 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="img/favicon.ico" />
   <title>Christine Ni's Personal Website</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css" />    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -58,49 +56,32 @@
     </div>
   </div>
   <section class="section dark">
-    <div class="h2">Here are some of my projects</div>
-    <br />
-
-    <div class="owl-carousel">
-      <div class="owl-stage-outer">
-        <div class="owl-stage">
-          <div class="owl-item"><span><img src="img/blank.jpg" alt="placeholder"></span></div>
-          <div class="owl-item"><span><img src="img/blank.jpg" alt="placeholder"></span></div>
-          <div class="owl-item"><span><img src="img/blank.jpg" alt="placeholder"></span></div>
-          <div class="owl-item"><span><img src="img/blank.jpg" alt="placeholder"><span></div>
+    <div id="portfolioCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#portfolioCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#portfolioCarousel" data-slide-to="1"></li>
+        <li data-target="#portfolioCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="placehold" src="img/contact.png" alt="First slide">
+        </div>
+        <div class="item">
+          <img class="placehold" src="img/about.png" alt="Second slide">
+        </div>
+        <div class="item">
+          <img class="placehold" src="img/portfolio.png" alt="Third slide">
         </div>
       </div>
-      <div class="owl-controls">
-        <div class="owl-nav">
-            <div class="owl-prev">prev</div>
-            <div class="owl-next">next</div>
-        </div>
-        <div class="owl-dots">
-            <div class="owl-dot active"><span></span></div>
-            <div class="owl-dot"><span></span></div>
-            <div class="owl-dot"><span></span></div>
-        </div>
-      </div>
-    <!--
-      <div><span><img src="img/blank.jpg" alt="placeholder"></span></div>
-      <div><span><img src="img/blank.jpg" alt="placeholder"></span></div>
-      <div><span><img src="img/blank.jpg" alt="placeholder"></span></div>
-      <div><span><img src="img/blank.jpg" alt="placeholder"></span></div>
-      <div><span><img src="img/blank.jpg" alt="placeholder"></span></div>
-    -->
+      <a class="left carousel-control" href="#portfolioCarousel" role="button" data-slide="prev">
+        <span class="carousel icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#portfolioCarousel" role="button" data-slide="next">
+        <span class="carousel icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-
-    <!--
-    <div>
-      <div class="owl-carousel">
-        <div class="blank"><img src="img/blank.jpg" alt="placeholder"></div>
-        <div class="blank"><img src="img/blank.jpg" alt="placeholder"></div>
-        <div class="blank"><img src="img/blank.jpg" alt="placeholder"></div>
-        <div class="blank"><img src="img/blank.jpg" alt="placeholder"></div>
-        <div class="blank"><img src="img/blank.jpg" alt="placeholder"></div>
-      </div>
-    </div>
-  ``-->
   </section>
 
   <div class="contact-img">
@@ -109,10 +90,26 @@
     </div>
   </div>
   <section class="section light">
-    <div class="h2">Find out more about me</div>
-    <br />
-    <p class="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, nostrum ipsa reiciendis dolorum earum a voluptatum doloremque sit architecto debitis saepe voluptas tempora velit consequuntur excepturi amet officia inventore. Accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perspiciatis cumque praesentium qui, error a similique! Quae, dolorum, consectetur. Obcaecati ut unde architecto tempora consequuntur non, officiis voluptas sunt, totam soluta sequi nemo vero qui numquam voluptatem, blanditiis dolor fugiat quisquam distinctio. Eaque pariatur deserunt amet vel sapiente natus officiis cupiditate voluptate eius repellat! Totam in laborum, voluptate dicta, fuga a nemo? Autem illo architecto facilis, magnam adipisci amet laboriosam enim placeat tenetur dolores minima voluptatibus obcaecati ad neque id, voluptas reprehenderit reiciendis dolor rem? Vitae ut ipsum aspernatur quis aut eum adipisci ab optio eius sequi deleniti, exercitationem ipsa.
-    </p>
+    <div class="h2">Get in touch</div>
+    <div class="">
+      <form id="contact" action="/action.php" method="post">
+        <fieldset>
+          <input id="fname" name="firstname" placeholder="First Name" type="text" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+        <input id="lname" name="lastname" placeholder="Last Name" type="text" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input id="email" placeholder=" Your Email" type="email" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <textarea id="subject" placeholder="Type your Message Here...." tabindex="4" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit">Submit</button>
+        </fieldset>
+      </form>
+    </div>
   </section>
 
   <div class="intro-img">
@@ -123,8 +120,8 @@
   </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

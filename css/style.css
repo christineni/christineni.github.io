@@ -30,7 +30,6 @@ body, html {
 .portfolio-img {
   background-image: url("../img/portfolio.png");
   min-height: 350px;
-  max-height: 400;
 }
 
 .contact-img {
@@ -86,8 +85,9 @@ body, html {
   border-radius: 50px;
 }
 
-.owl-carousel {
-  min-height: 150px;
+.placehold {
+  max-height: 300px;
+  width: 100%;
 }
 
 #pic {
